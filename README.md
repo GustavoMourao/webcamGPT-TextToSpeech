@@ -10,7 +10,7 @@ https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/rec-gpt-
 webcamGPT+SpeechToText is a set of tools and examples showing how to use the OpenAI vision API to 
 run inference on images, video files and webcam streams.
 
-https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/code-stru.png
+![alt text](https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/code-stru.png)
 
 🚧 keep in mind that the repository is still under construction
 
