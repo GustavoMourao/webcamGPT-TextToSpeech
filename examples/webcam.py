@@ -8,7 +8,7 @@ import numpy as np
 import webcamgpt
 
 from openai import OpenAI
-client = OpenAI(api_key='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')
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 MARKDOWN = """
 # webcamGPT with audio input (whisper-1 TextToAudio model)
