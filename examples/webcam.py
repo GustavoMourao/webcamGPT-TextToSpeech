@@ -7,13 +7,16 @@ import numpy as np
 
 import webcamgpt
 
-MARKDOWN = """
-# webcamGPT 💬 + 📸
+from openai import OpenAI
+client = OpenAI(api_key='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')
 
-This is a demo of webcamGPT, a tool that allows you to chat with video using GPT-4. 
+MARKDOWN = """
+# webcamGPT with audio input (whisper-1 TextToAudio model)
+
+This is a demo of webcamGPT, a tool that allows you to chat with video using GPT-4 given a prompt converted from audio (Portuguese) 
 """
 
-connector = webcamgpt.OpanAIConnector()
+connector = webcamgpt.OpenAIConnector()
 
 
 def save_image_to_drive(image: np.ndarray) -> str:
@@ -36,12 +39,23 @@ def respond(image: np.ndarray, prompt: str, chat_history):
 
 
 with gr.Blocks() as demo:
+
+    # TextToAudio model
+    audio_file= open("/media/gustavo/Gustavo2/random-tests/prompt-evals/webcamGPT/input/descreva_cena_v2.mp3", "rb")
+    transcript = client.audio.translations.create(
+      model="whisper-1", 
+      file=audio_file
+    )
+
+
     gr.Markdown(MARKDOWN)
     with gr.Row():
         webcam = gr.Image(source="webcam", streaming=True)
         with gr.Column():
             chatbot = gr.Chatbot(height=500)
+            word = gr.Markdown(transcript.text)
             message = gr.Textbox()
+            message.value = word.value
             clear_button = gr.ClearButton([message, chatbot])
 
     message.submit(respond, [webcam, message, chatbot], [message, chatbot])
