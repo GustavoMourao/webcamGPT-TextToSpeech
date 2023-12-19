@@ -1,13 +1,13 @@
 <div align="center">
-    <h1>webcamGPT</h1>
+    <h1>webcamGPT+SpeechToText</h1>
     <p>chat with video stream</p>
 </div>
 
 https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/rec-gpt-audio.mp4
 
-## 👋 hello
+## 👋 hello, Olá!
 
-webcamGPT is a set of tools and examples showing how to use the OpenAI vision API to 
+webcamGPT+SpeechToText is a set of tools and examples showing how to use the OpenAI vision API to 
 run inference on images, video files and webcam streams.
 
 🚧 keep in mind that the repository is still under construction
