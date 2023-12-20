@@ -3,7 +3,7 @@
     <p>chat with video stream</p>
 </div>
 
-![alt text](https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/rec-gpt-audio.mp4)
+![alt text](https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/rec-gpt-audio_cliped.gif)
 
 ## 👋 hello, Olá!
 
@@ -11,6 +11,8 @@ webcamGPT+SpeechToText is a set of tools and examples showing how to use the Ope
 run inference on images, video files and webcam streams.
 
 ![alt text](https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/code-stru.png)
+
+** In this test it's necessary put the audio into the folder `input`
 
 🚧 keep in mind that the repository is still under construction
 
