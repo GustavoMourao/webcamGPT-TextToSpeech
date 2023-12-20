@@ -3,7 +3,7 @@
     <p>chat with video stream</p>
 </div>
 
-![alt text](https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/rec-gpt-audio_cliped.gif)
+![Alt Text](https://github.com/GustavoMourao/webcamGPT-TextToSpeech/blob/main/input/rec-gpt-audio_cliped.gif)
 
 ## 👋 hello, Olá!
 
